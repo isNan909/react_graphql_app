@@ -12,9 +12,11 @@ function JobsWrapper() {
   return (
     <div>
       <Appheader />
-      {jobs.map((jobs) => (
-        <Jobslist key={jobs.id} jobs={jobs} />
-      ))}
+      <section className="jobsWrapper">
+        {jobs.map((jobs) => (
+          <Jobslist key={jobs.id} jobs={jobs} />
+        ))}
+      </section>
     </div>
   );
 }

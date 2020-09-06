@@ -5,12 +5,24 @@ const GET_JOBLIST = gql`
     jobs {
       id
       title
-      cities {
-        name
+      tags {
         id
+        name
+      }
+      cities {
+        id
+        name
         country {
           name
         }
+      }
+      company {
+        name
+        logoUrl
+      }
+      remotes {
+        id
+        type
       }
     }
   }
