@@ -7,6 +7,7 @@ const GET_JOBLIST = gql`
       title
       cities {
         name
+        id
         country {
           name
         }

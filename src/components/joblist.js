@@ -1,6 +1,12 @@
 import React from 'react';
 
 export function Jobslist({ jobs }) {
-  return <p>{jobs.title}</p>;
+  return (
+    <>
+      {jobs.title}
+      {jobs.cities.map((cities) => (
+          <li key={cities.id} >{cities.name}</li>
+      ))}
+    </>
+  );
 }
-
