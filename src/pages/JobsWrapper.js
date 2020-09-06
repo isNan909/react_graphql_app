@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import { Jobslist } from '../components/joblist';
 import GET_JOBLIST from '../graphql/get-joblist';
