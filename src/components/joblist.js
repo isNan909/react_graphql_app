@@ -7,7 +7,7 @@ export function Jobslist({ jobs }) {
       <div className="JoblistCard flexContainer">
         <div className="flexConatiner">
           <div className="JoblistCard_logo">
-            <img src={jobs.company.logoUrl} alt="job logo" />
+            {jobs.company.logoUrl === '' || null ? <p>logo</p> : <p>no logo</p>}
           </div>
           <div className="JoblistCard_title">
             {jobs.title}
